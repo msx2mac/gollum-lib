@@ -89,12 +89,12 @@ module Gollum
 
           if prev_folders[depth] != '.'
             (prev_folders.size - depth).times do
-              html = end_folder
+              html += end_folder
             end
           end
           if current_folders[depth] != '.'
             (current_folders.size - depth).times do |index|
-              html = new_sub_folder current_folders[depth  index]
+              html += new_sub_folder current_folders[depth + index]
             end
           end
           break
