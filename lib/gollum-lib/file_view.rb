@@ -96,7 +96,7 @@ module Gollum
             (current_folders.size - depth).times do |index|
               html = new_sub_folder current_folders[depth  index]
             end
-           end
+          end
           break
          end
 
